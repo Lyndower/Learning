@@ -59,10 +59,3 @@ elif code=='E':
     w.to_file( 'D:/test.png' )  ##将次云保存为图像文件
 else:
     print("代号错误")
-
-
-
-
-
-
-
