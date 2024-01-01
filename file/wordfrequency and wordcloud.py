@@ -1,7 +1,6 @@
 #英文词频分析
 import re
 from collections import Counter
-
 # 打开文件并读取内容
 with open('A Sunrise on the Veld.txt', 'r', encoding='utf-8') as file1:
     text = file1.read().lower()
@@ -40,6 +39,8 @@ for word,frequency in D:
     if word not in xuci:
         skip_xuci.append(word)
         print(f'{word}:{frequency}')
+
+
 #第三方库wordcloud和词语可视化
 import wordcloud
 w=wordcloud.WordCloud(background_color='blue', #词云背景色，默认为黑
